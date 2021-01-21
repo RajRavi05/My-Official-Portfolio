@@ -138,7 +138,11 @@ body {
   background-color: var(--dark-color) !important;
 }
 .dark-1 {
+<<<<<<< HEAD
   background: #202535 !important;
+=======
+  background:  #202535 !important;
+>>>>>>> 7021574d3612776f7dbcd410ca096da7a5dbf10d
 }
 
 /********************  Navbar   **********************/
