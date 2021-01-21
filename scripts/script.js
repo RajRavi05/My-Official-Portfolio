@@ -31,11 +31,11 @@ console.log(currentYear);
 const check = document.getElementById("check");
 
 check.addEventListener("change", () => {
-  document.querySelector("body").classList.toggle("dark-1");
-  document.querySelector("nav").classList.toggle("dark-1");
-  document.querySelector("#footer").classList.toggle("dark-1");
-  document.querySelector(".nav-links").classList.toggle("dark-1");
-  document.querySelector(".social-icons").classList.toggle("dark-1");
+  document.querySelector("body").classList.toggle("dark");
+  document.querySelector("nav").classList.toggle("dark");
+  document.querySelector("#footer").classList.toggle("dark");
+  document.querySelector(".nav-links").classList.toggle("dark");
+  document.querySelector(".social-icons").classList.toggle("dark");
 });
 
 const navbar = document.getElementById("navbar");
