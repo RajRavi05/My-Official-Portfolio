@@ -1,0 +1,148 @@
+@media screen and (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 87vh;
+    top: 10vh;
+    background: #ead6ee;
+    flex-direction: column;
+    width: 70%;
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+    border-radius: 10px 0 0 10px;
+    padding: 1rem;
+    margin-top: -2px;
+    box-shadow: -2px 0px 4px rgba(255, 255, 255, 0.2),
+      2px 0px 4px rgba(0, 0, 0, 0.5);
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+
+  .showcase {
+    flex-direction: column;
+  }
+  .showcase-img {
+    width: 350px;
+  }
+  .showcase-text {
+    margin-top: 5rem;
+  }
+  .showcase-text h2 {
+    font-size: 2.5rem;
+  }
+  .about-contents {
+    flex-direction: column;
+  }
+  .about-content-img {
+    width: 330px;
+  }
+  .about-content-text {
+    width: 350px;
+  }
+  .about-content-text p {
+    font-size: 1.2rem;
+  }
+
+  .skills-contents {
+    flex-direction: column;
+  }
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .skills-img {
+    width: 330px;
+  }
+  .work-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .work-card {
+    width: 330px;
+  }
+  .btn-3 {
+    padding: 0.5rem 2rem;
+  }
+
+  .social-contents {
+    flex-direction: column;
+  }
+  .social-header h2 {
+    font-size: 2.2rem;
+  }
+  .social-img {
+    width: 330px;
+  }
+  .social-icons {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+  .contact-details {
+    flex-direction: column;
+  }
+  .mailID {
+    padding: 1.6rem;
+  }
+  .mailID h3 {
+    font-size: 1.5rem;
+  }
+  .form {
+    padding: 1rem;
+    margin: 10px;
+  }
+  .form-title h3 {
+    font-size: 1.5rem;
+  }
+  .footer {
+    padding: 1rem;
+  }
+  .uparrow i {
+    font-size: 1.5rem;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navFade {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5.5px, 7px);
+  transition: all 0.5s ease-in;
+}
+.toggle .line2 {
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5.5px, -7px);
+  transition: all 0.5s ease-in;
+}
+
+@media screen and (max-width: 1024px) {
+  .work-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .skills-contents {
+    flex-direction: column;
+  }
+  .contact-details {
+    flex-direction: column;
+  }
+}
